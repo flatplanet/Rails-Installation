@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mysite</title>
+    <title>My Web Site</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,11 @@
   </head>
 
   <body>
-    <%= yield %>
+  	<%= render 'home/navbar' %>
+
+  	<br/>
+  	<div class="container">
+    	<%= yield %>
+	</div>
   </body>
 </html>
